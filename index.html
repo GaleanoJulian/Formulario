@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi 1 pagina bro</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="script.js">
+</head>
+
+<style >
+    table,th,td{
+        border: 1px solid black;
+    border-collapse: collapse;
+    }
+    th, td{
+        padding: 10px;
+    }
+</style>
+<body bgcolor="BAD1CF">
+<table style="width: 100%;b"bgcolor="14A7FA">
+    <tr>
+    <th><img src="logosena.png"width="140" ></th>
+    <th>MI FORMULARIO</th>
+    <th><img src="rayo.png"width="140" ></th>
+    </tr>
+    <form>
+</table>
+<h5 align="center">DATOS PERSONALES</h5>
+<center>
+<table style="width: 50%;"bgcolor="14A7FA">
+<tr><th>
+<label for="Nombre">Ingrese sus Nombres:</label>
+<input type="text" placeholder="Escriba su nombre" name="nombre" maxlength="15" id="nombre">  
+<br>
+<label for="apellido">Ingrese sus apellidos:</label>
+<input type="text"placeholder="Escriba su appellido" maxlength="15">
+<br>
+<label for="Correo">Ingrese correo o email:</label>
+<input type="text"placeholder="Escriba su correo" maxlength="30">
+<p> SEXO</p>
+<input type="radio" name="ola" id="">Femenino
+<input type="radio" name="ola" id="">Masculino
+<input type="radio" name="ola" id="">Otro  
+<div class="form-group"> <br>
+
+    <label for="nivel-estudios" class="form-label">SELECCIONE SU NIVEL DE ESTUDIOS:</label> 
+    
+    <div> <br>
+      <input type="checkbox" id="sin-estudios" name="nivel-estudios" value="sin-estudios" onchange="desmarcarOpciones(this)">
+      <label for="sin-estudios">Sin estudios</label>
+    </div>
+    <div>
+      <input type="checkbox" id="bachillerato" name="nivel-estudios" value="bachillerato">
+      <label for="bachillerato">Bachillerato</label>
+    </div>
+    <div>
+      <input type="checkbox" id="tecnico" name="nivel-estudios" value="técnico">
+      <label for="tecnico">Técnico</label>
+    </div>
+    <div>
+      <input type="checkbox" id="tecnologo" name="nivel-estudios" value="tecnólogo">
+      <label for="tecnologo">Tecnólogo</label>
+    </div>
+    <div>
+      <input type="checkbox" id="universitario" name="nivel-estudios" value="profesional">
+      <label for="universitario">Universitario</label>
+    </div>
+  </div> <br>
+  <script>
+    function desmarcarOpciones(input) {
+      if (input.checked) {
+        // Si ha marcado "sin estudios", desmarcar los demás
+        document.querySelectorAll('input[type="checkbox"][name="nivel-estudios"]:not(#'+input.id+')')
+          .forEach(function(opcion) {
+            opcion.checked = false;
+          });
+      }
+    }
+  </script>
+  </div>
+  <input type="reset"Restaurar>
+  <input type="submit"Enviar Formulario>
+</th></tr> </table>
+</center>
+<br> 
+<center>
+<a href="https://www.youtube.com/shorts/55_M5Ghukhw" target="_blank"onclick="location.reload()" class="btn1">CREAR</a>
+<a href="https://www.youtube.com/shorts/16uJ-jxcKHo" target="_blank" class="btn2">BUSCAR</a>
+<a href="https://www.youtube.com/watch?v=JjkXis-crl8" target="_blank" class="btn3">MODIFICAR</a>
+<a href="https://www.youtube.com/watch?v=KHYO6ufYAig" target="_blank" class="btn4">BORRAR</a>
+</center>
+<script src="nombre-inventado.js"></script>
+ 
+</body>
+</html>
